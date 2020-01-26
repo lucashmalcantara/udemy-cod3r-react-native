@@ -1,14 +1,15 @@
 import React from 'react'
-import Simples from './componentes/Simples'
-
-// Importamos dois componentes que fazem parte da biblioteca react-native
 import { View, Text, StyleSheet } from 'react-native'
+
+import Simples from './componentes/Simples'
+import ParImpar from './componentes/ParImpar'
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
         <Simples texto='Flexível!' />
+        <ParImpar numero={33} />
       </View>
     )
   }
